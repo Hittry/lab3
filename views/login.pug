@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .container
+        form.form-signin(role='form', action='/login', method='post')
+            h2.form-signin-heading Please sign in
+            label(for='inputEmail') Example name: Ivan
+            input.form-control(type='text', name='username', id='inputEmail', placeholder='Username', required, autofocus)
+            input.form-control(type='password', name='password', id='inputPassword', placeholder='Password')
+            button.btn.btn-lg.btn-primary(type='submit') LOGIN
+            //обязательно для заполнения и ставит метку сразу в это поле

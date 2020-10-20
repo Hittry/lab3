@@ -1,0 +1,21 @@
+
+doctype html
+html
+    head
+        style
+            include style.css
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+
+    body
+        div.bg
+            nav.navbar.navbar-inverse
+            h2 Task1
+            h2 Format: after lab3/ add this string task1?fruit=wdwd&fruit=cscdc&fruit=cmmcsm&number=2
+            ul.nav
+                li
+                    a(href='/api/ShuvalovSasha/lab1/lab3/task1?fruit=wdwd&fruit=cscdc&fruit=cmmcsm&number=2') If you want see test format, you can press this
+                li
+                    a(href='/logout') Logout
+
+            include footer.pug
+

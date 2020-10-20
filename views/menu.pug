@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        style
+            include style.css
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    body
+        div.bg
+            nav.navbar.navbar-inverse
+            h2 Tasks
+            ul
+                for num in [1,2,3]
+                    li
+                        a(href = "/api/ShuvalovSasha/lab1/lab3/views/exampl" + num) Task #{num}
+
+            hr
+            h2 Params
+            h4 Task1: array and number of element wich you want add to the end example: fruit=wewe&fruit=sdsd&fruit=vcbcvc&number=2
+            h4 Task2: 2 data in format data1 = 12,23,14,12 1)month 2)hours 3) minutes 4) seconds
+            h4 Task3: 4 parametrs in ms for check promise example: Text1=2000&Text2=4000&Text3=2500&Text4=3000
+
+            include footer.pug
+

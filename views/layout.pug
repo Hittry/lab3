@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        style
+            include style.css
+        title= title
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    body
+        div.bg
+            nav.navbar.navbar-inverse //цветовой стиль темный
+                div.container-fluid Занимает полный экран
+                    div.navbar-header Заголовок
+                        button.navbar-toggle(type='button', data-toggle="collapse") для удобства чтобы окно с предложенными логинами не оставалось видно
+                        a.navbar-brand(href='/') Node.js Auth
+                    ul.nav.navbar-right //рассположение полей
+                        if (!user)
+                            li
+                                a(href='/login') Login
+                            li
+                                a(href='/register') Register
+                        if (user)
+                            li
+                                a(href='/logout') Logout
+                            li
+                                a(href = '/api/ShuvalovSasha/lab1/lab3/views/menu') Menu
+
+            div.container
+                div.content
+                    block content
